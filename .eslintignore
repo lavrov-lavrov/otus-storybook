@@ -1,0 +1,6 @@
+.history
+.idea
+.storybook
+node_modules
+dist
+storybook-static

@@ -1,0 +1,31 @@
+$dark: #222222;
+
+.links {
+
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+
+  &__item {
+
+    display: flex;
+    align-items: flex-start;
+
+    & + & {
+
+      margin-top: 16px;
+    }
+  }
+
+  &__bullet {
+
+    display: block;
+  }
+
+  &__text {
+
+    margin-left: 12px;
+  }
+}
