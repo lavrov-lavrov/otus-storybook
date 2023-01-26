@@ -1,0 +1,60 @@
+$crimson: crimson;
+$aqua: aqua;
+$lime: lime;
+$grey: grey;
+
+.button {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background .15s ease-in-out;
+
+  &.crimson {
+
+    background: $crimson;
+
+    &:hover {
+
+      background: darken($crimson, 10);
+    }
+  }
+
+  &.aqua {
+
+    background: $aqua;
+
+    &:hover {
+
+      background: darken($aqua, 10);
+    }
+  }
+
+  &.lime {
+
+    background: $lime;
+
+    &:hover {
+
+      background: darken($lime, 10);
+    }
+  }
+
+  &.disabled {
+
+    background: $grey;
+    cursor: pointer;
+
+    &:hover {
+
+      background: $grey;
+    }
+  }
+}
